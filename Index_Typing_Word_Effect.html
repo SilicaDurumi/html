@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel= "stylesheet" type="text/css" href="CSS_TEST.css">
+</head>
+
+<body>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<div id="typing"></div>
+<script>
+
+showtext = new Array(8);
+showtext[0] = "ABC123456";
+showtext[1] = "BCD123456";
+showtext[2] = "CDE1234561";
+showtext[3] = "CDE2123456";
+showtext[4] = "CDE3123456";
+showtext[5] = "CDE4123456";
+showtext[6] = "CDE5123456";
+showtext[7] = "CDE6123456";
+
+var typing = document.getElementById('typing');
+var typewriter = new Typewriter(typing, {loop: true});
+
+typewriter
+		.typeString(showtext[0])
+    .pauseFor(1500)
+		.deleteAll()
+    .typeString(showtext[1])
+    .pauseFor(1500)
+    .deleteAll()
+    .typeString(showtext[2])
+    .pauseFor(1500)
+		.deleteAll()
+    .typeString(showtext[3])
+    .pauseFor(1500)
+		.deleteAll()
+    .typeString(showtext[4])
+    .pauseFor(1500)
+		.deleteAll()
+    .typeString(showtext[5])
+    .pauseFor(1500)
+		.deleteAll()
+    .typeString(showtext[6])
+    .pauseFor(1500)
+		.deleteAll()
+    .typeString(showtext[7])
+    .pauseFor(1500)
+    .start();
+</script>
+
+<div>
+ <h1><a href="http://silicawebsite.ga/">Test</a></h1>
+ <form class=".Js-FirstName">
+   <label for="First_Name">First Name:</label><br>
+  <input type="text"><br>
+ </form>
+ <form class = ".Js-LastName">
+  <label for="lname">Last Name:</label><br>
+  <input type="text">
+ </form>
+ <br>
+ <ul>
+   <dl>
+     <a href = "https://www.python.org/">Python</a>
+     <dd>1.First</dd>
+     <dd>2.Second</dd>
+     <dd>3.Third</dd>
+     </dl>
+   <li><a href = "https://www.w3schools.com/Css/">CSS</a></li>
+   <li><a href = "https://www.w3schools.com/html/"><abbr title="Hyper markup text language">HTML</abbr></a></li>
+   <li><a href = "https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+ </ul>
+<br>
+</div>
+<div>
+     <dd>1.First</dd>
+     <dd>2.Second</dd>
+     <dd>3.Third</dd>
+</div>
+<br>
+<span>TTEESSTT</span>
+
+<table border="1">
+<caption>Test Table</caption>
+  <th>Header1</th>
+  <th>Header2</th>
+  <tr>
+    <td>Data1</td>
+    <td>Data2</td>
+  </tr>
+  <tr>
+    <td>Data3</td>
+    <td>Data4</td>
+  </tr>
+</table>
+<br>
+<table border="1">
+  <tr>
+    <td rowspan="7">ABC</td>
+  </tr>
+  <tr>
+    <td>AABBCC</td>
+  </tr>
+  <tr>
+    <td>AAA</td>
+  </tr>
+  <tr>
+    <td>AAA</td>
+  </tr>
+  <tr>
+    <td>AAA</td>
+  </tr>
+  <tr>
+    <td>AAA</td>
+  </tr>
+  <tr>
+    <td>AAA</td>
+  </tr>
+</table>
+
+<br>
+</body>
+</html>

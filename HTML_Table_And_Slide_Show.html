@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+	#slide {
+		border:1px solid #000;
+		border-radius: 10px;
+		box-shadow: 3px 3px 5px #333;
+		}
+	#content{
+		font-size: 12px;
+		margin:30px 0;
+		text-align:center;
+		}
+</style>
+
+    <script type="text/javascript">
+var image1=new Image();
+   image1.src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80";
+ var image2=new Image();
+   image2.src="https://images.unsplash.com/photo-1598983870677-01e066a0b901?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80";
+ var image3=new Image();
+   image3.src="https://images.unsplash.com/photo-1514539079130-25950c84af65?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80";
+var image4 = new Image();
+  image4.src="https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80";
+</script>
+
+</head>
+
+<body>
+<div style="background-color:grey; font-size:35px;">Main Title Web Page</div>
+
+<table width:"100%">
+  <colgroup>
+    <col width ="15%">
+    <col width ="100%">
+  </colgroup>
+
+<tr>
+  <th bgcolor = "green">Menu</th>
+  <th style ="text-align:left" >Content</th>
+</tr>
+
+    <tr>
+      <td bgcolor = "green">
+        HTML <br>
+        CSS <br>
+        JavaScript
+      </td>
+      <td rowspan="3">
+        Display Content here  
+      </td>
+    </tr>
+
+</table>
+  <div style="text-align:center; background-color:grey;">CopyLeft 2020</div>
+
+<div id="content">
+<img id="slide" src="test00.jpg" name="slide" width="600" height="350"><br/>
+</div>
+
+<script type="text/javascript">
+var step=1;
+function slideit(){
+	document.images.slide.src=eval("image"+step+".src");
+if (step<4)
+	step++;
+else
+	step=1;
+	setTimeout("slideit()",2000);
+}
+slideit();
+</script>
+
+
+</body>
+</html>

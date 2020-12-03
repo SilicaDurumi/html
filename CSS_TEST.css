@@ -2,5 +2,9 @@ div{
   border: 2px solid black;
 }
 span{
-  background-color:green
+  /* background-color:green; */
+}
+
+typing{
+  background-color: aqua;
 }
