@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>SilicaWeb</title>
 </head>
 
 <body>
-  <h1><a href="index.py?id=Test">Test</a></h1>
+  <h1><a href="index.py">Test</a></h1>
+
+  <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value ==='night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+      } 
+">
   <br>
-  <h4><a href = "https://www.python.org/">1.Python</a></h4>
-  <h4><a href = "https://www.w3schools.com/Css/">2.CSS</a></h4>
-  <h4><a href = "https://www.w3schools.com/html/">3.HTML</a></h4>
-  <h4><a href = "https://www.w3schools.com/js/default.asp">4.JavaScript</a></h4>
-  <br>
-  <a href = "/hello.py">1+1=?</a>
+
 </body>
 </html>
